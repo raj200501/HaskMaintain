@@ -1,0 +1,21 @@
+cabal-version:       >=1.10
+name:                HaskMaintain
+version:             0.1.0.0
+synopsis:            A Haskell codebase analyzer for maintainability.
+description:         HaskMaintain analyzes a Haskell codebase and provides metrics like lines of code, function count, and cyclomatic complexity.
+license:             MIT
+license-file:        LICENSE
+author:              Raj Kashikar
+maintainer:          rajskashikar@gmail.com
+category:            Development
+build-type:          Simple
+extra-source-files:  README.md
+
+executable HaskMaintain
+  main-is:             Main.hs
+  hs-source-dirs:      app, src
+  build-depends:       base >=4.7 && <5,
+                       directory,
+                       filepath,
+                       haskell-src-exts
+  default-language:    Haskell2010
