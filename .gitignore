@@ -1,0 +1,13 @@
+# Haskell
+dist/
+.stack-work/
+*.hi
+*.o
+
+# Cabal
+dist-newstyle/
+cabal.project.local
+
+# Stack
+.stack-work/
+.stack/
