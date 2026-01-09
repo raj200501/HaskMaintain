@@ -1,13 +1,5 @@
-# Haskell
-dist/
-.stack-work/
-*.hi
-*.o
-
-# Cabal
-dist-newstyle/
-cabal.project.local
-
-# Stack
-.stack-work/
-.stack/
+__pycache__/
+*.pyc
+.pytest_cache/
+reports/
+test-output/
