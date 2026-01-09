@@ -1,11 +1,6 @@
 module Main where
 
-import System.Environment (getArgs)
-import Analyzer (analyzeDirectory)
+import CLI (runCLI)
 
 main :: IO ()
-main = do
-    args <- getArgs
-    case args of
-        [dir] -> analyzeDirectory dir
-        _     -> putStrLn "Usage: HaskMaintain <path-to-codebase>"
+main = runCLI
